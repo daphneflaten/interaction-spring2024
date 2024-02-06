@@ -1,0 +1,42 @@
+.pop {
+    color: salmon;
+    font-weight: bold;
+}
+
+.blues {
+    color: blue;
+    font-weight: bold;
+}
+
+.indie-folk {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.indie-pop {
+    color: purple;
+    font-weight: bold;
+}
+
+.indie-rock {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color:darkslateblue;
+}
+
+p {
+    color: white;
+}

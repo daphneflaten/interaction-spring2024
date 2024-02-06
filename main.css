@@ -1,0 +1,29 @@
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'advera';
+    src: url('custom-fonts/Advera.ttf') format('truetype');
+    font-family: 'gemas';
+    src: url('custom-fonts/Gemas.ttf') format('truetype');
+    font-family: 'lumina';
+    src: url('custom-fonts/LUMINA.ttf') format('truetype');
+    font-family: 'mogilte';
+    src: url('custom-fonts/Mogilte.otf') format('opentype');
+    font-family: 'ombake';
+    src: url('custom-fonts/Ombake.ttf') format('truetype');
+    font-family: 'protest';
+    src: url('custom-fonts/Protest\ Demo.ttf') format('truetype');
+    font-family: 'akzidenz';
+    src: url('custom-fonts/AkzidenzGroteskBE-Regular.otf') format('opentype');
+    font-family: 'cream';
+    src: url('custom-fonts/cream-DEMO.ttf') format('opentype');
+    font-family: 'modern-sans';
+    src: url('custom-fonts/ModernSans-Light.otf') format('opentype');
+}
