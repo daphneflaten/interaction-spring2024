@@ -18,12 +18,24 @@ body {
     src: url('custom-fonts/Mogilte.otf') format('opentype');
     font-family: 'ombake';
     src: url('custom-fonts/Ombake.ttf') format('truetype');
-    font-family: 'protest';
-    src: url('custom-fonts/Protest\ Demo.ttf') format('truetype');
     font-family: 'akzidenz';
     src: url('custom-fonts/AkzidenzGroteskBE-Regular.otf') format('opentype');
     font-family: 'cream';
     src: url('custom-fonts/cream-DEMO.ttf') format('opentype');
     font-family: 'modern-sans';
     src: url('custom-fonts/ModernSans-Light.otf') format('opentype');
+    font-family: 'analogist';
+    src: url('custom-fonts/Analogist.ttf') format('truetype');
+    font-family: 'zagora';
+    src: url('custom-fonts/Zagora.ttf') format('truetype');
+    font-family: 'bugaki';
+    src: url('custom-fonts/Bugaki.ttf') format('truetype');
+    font-family: 'bugaki-oblique';
+    src: url('custom-fonts/Bugaki\ Oblique.ttf') format('truetype');
+    font-family: 'crima';
+    src: url('custom-fonts/Crima.ttf') format('truetype');
+    font-family: 'carena';
+    src: url('custom-fonts/Carena-Regular.otf') format('opentype');
+    font-family: 'abz';
+    src: url('custom-fonts/ABeeZee-Regular.ttf') format('truetype');
 }
