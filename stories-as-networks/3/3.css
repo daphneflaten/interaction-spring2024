@@ -14,12 +14,12 @@ body {
     font-size: 12px;;
     line-height: 1.5;
     cursor: pointer;
-    color: black; /* Initial text color */
+    color: black;
     filter: blur(2px);
-    transition: filter 0.3s ease; /* Smooth transition */
+    transition: filter 0.3s ease;
 }
   
 #text:hover {
-    filter: none; /* Remove blur on hover */
+    filter: none;
 }
   
