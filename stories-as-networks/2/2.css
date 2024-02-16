@@ -18,13 +18,13 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite alternate;
     z-index: 10;
 }
   
 .hexagon1 {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 160%;
     transform: translate(-50%, -50%);
     width: 500px;
@@ -58,7 +58,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite alternate;
 }
   
 .hexagon2 {
@@ -85,16 +85,16 @@ body {
 
 .text2 {
     color: #25262A;
-    font-size: 12px;
+    font-size: 4px;
     font-family: 'analogist', sans-serif;
-    filter: blur(4px);
+    filter: blur(2px);
 }
 
 .hexagon-container3 {
     position: relative;
     width: 300px;
     height: 300px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite alternate;
 }
   
 .hexagon3 {
@@ -120,7 +120,7 @@ body {
 
 .text3 {
     color: #25262A;
-    font-size: 12px;
+    font-size: 8px;
     font-family: 'analogist', sans-serif;
     filter: blur(2px);
 }
@@ -163,4 +163,12 @@ body {
     100% {
         text-shadow: 0 0 20px #D6CB6E;
     }
+}
+
+.text2:hover {
+    cursor: pointer;
+}
+
+.text3:hover {
+    cursor: pointer;
 }

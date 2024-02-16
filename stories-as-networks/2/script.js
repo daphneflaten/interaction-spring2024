@@ -1,8 +1,15 @@
-window.addEventListener('scroll', function() {
-    const parallaxLayers = document.querySelectorAll('.parallax-layer');
-    parallaxLayers.forEach(layer => {
-        const speed = layer.getAttribute('data-speed');
-        const yPos = -(window.scrollY * speed / 100);
-        layer.style.transform = `translate3d(0px, ${yPos}px, 0px)`;
+document.addEventListener('DOMContentLoaded', function() {
+    var initialText = document.getElementById('text1').innerText;
+
+    document.getElementById('text3').addEventListener('click', function() {
+        var tempText = document.getElementById('text1').innerText;
+        document.getElementById('text1').innerText = document.getElementById('text3').innerText;
+        document.getElementById('text3').innerText = tempText;
+    });
+
+    document.getElementById('text2').addEventListener('click', function() {
+        var tempText = document.getElementById('text1').innerText;
+        document.getElementById('text1').innerText = document.getElementById('text2').innerText;
+        document.getElementById('text2').innerText = tempText;
     });
 });
