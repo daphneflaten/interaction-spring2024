@@ -172,3 +172,51 @@ body {
 .text3:hover {
     cursor: pointer;
 }
+
+@keyframes float {
+    0%, 100% {
+      top: 50%;
+      left: 50%;
+    }
+    25% {
+      top: 25%;
+      left: 75%;
+    }
+    50% {
+      top: 50%;
+      left: 25%;
+    }
+    75% {
+      top: 75%;
+      left: 50%;
+    }
+  }
+
+.hexagon {
+    position: absolute;
+    width: 80px;
+    height: 46.16px;
+    background-color: #D6CB6E;
+    animation: float 10s infinite linear;
+    z-index: 100;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 23.08px solid #D6CB6E;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 23.08px solid #D6CB6E;
+}

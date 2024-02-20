@@ -1,15 +1,10 @@
-const floatingButton = document.getElementById('floatingButton');
-const screenWidth = window.innerWidth;
-const screenHeight = window.innerHeight;
+const hexagon = document.getElementById("hexagon");
+let rotation = 0;
 
-// Move button smoothly
-function floatButton() {
-  const randomX = Math.random() * (screenWidth - floatingButton.offsetWidth);
-  const randomY = Math.random() * (screenHeight - floatingButton.offsetHeight);
-
-  floatingButton.style.left = randomX + 'px';
-  floatingButton.style.top = randomY + 'px';
+function rotateHexagon() {
+    rotation += 1;
+    hexagon.style.transform = `rotate(${rotation}deg)`;
+    requestAnimationFrame(rotateHexagon);
 }
 
-// Move button periodically
-setInterval(floatButton, 2000); // Adjust the interval as needed
+rotateHexagon();

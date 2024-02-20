@@ -1,6 +1,5 @@
 body {
   background-color: #25262A;
-  text-align: center;
 }
 
 h1 {
@@ -16,6 +15,7 @@ h1 {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .container2 {
@@ -70,4 +70,33 @@ h1 {
     top: 75%;
     left: 50%;
   }
+}
+
+.hexagon {
+  position: absolute;
+  width: 80px;
+  height: 46.16px;
+  background-color: #D6CB6E;
+  animation: float 10s infinite linear;
+  z-index: 100;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 23.08px solid #D6CB6E;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.08px solid #D6CB6E;
 }

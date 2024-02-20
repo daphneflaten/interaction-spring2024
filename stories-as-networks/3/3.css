@@ -1,25 +1,91 @@
 body {
     padding: 200px;
-    font-family: 'anologist', sans-serif;
-    background-color: #FAF8F4;
-    color: #25262A;
+    font-family: 'analogist', sans-serif;
+    background-color: #25262A;
+    color: #FAF8F4;
+    letter-spacing: 1px;
 }
   
 .container1 {
     position: relative;
     width: 20ch;
+    font-family: 'analogist', sans-serif;
+}
+
+.container2 {
+    position: relative;
+    color: #D6CB6E;
+    margin-top: 50px;
+    animation: glow 2s infinite alternate;
 }
   
 #text {
     font-size: 12px;;
     line-height: 1.5;
     cursor: pointer;
-    color: black;
+    color: 25262A;
     filter: blur(2px);
     transition: filter 0.3s ease;
+    font-family: 'analogist', sans-serif;
+    letter-spacing: 1px;
 }
   
 #text:hover {
     filter: none;
 }
-  
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 3px #D6CB6E;
+    }
+    100% {
+        text-shadow: 0 0 20px #D6CB6E;
+    }
+}
+
+.hexagon {
+    position: absolute;
+    width: 80px;
+    height: 46.16px;
+    background-color: #D6CB6E;
+    animation: float 10s infinite linear;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 23.08px solid #D6CB6E;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 23.08px solid #D6CB6E;
+}
+
+@keyframes float {
+    0%, 100% {
+      top: 50%;
+      left: 50%;
+    }
+    25% {
+      top: 25%;
+      left: 75%;
+    }
+    50% {
+      top: 50%;
+      left: 25%;
+    }
+    75% {
+      top: 75%;
+      left: 50%;
+    }
+  }

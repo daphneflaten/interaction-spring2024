@@ -1,15 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const textElement = document.getElementById("text");
-    const text = "Hello, world!";
-    let index = 0;
-  
-    function type() {
-      if (index < text.length) {
-        textElement.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(type, 100); // Adjust speed here (milliseconds)
-      }
-    }
-  
-    type();
-  });
+const hexagon = document.getElementById("hexagon");
+let rotation = 0;
+
+function rotateHexagon() {
+    rotation += 1;
+    hexagon.style.transform = `rotate(${rotation}deg)`;
+    requestAnimationFrame(rotateHexagon);
+}
+
+rotateHexagon();
