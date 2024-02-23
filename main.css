@@ -38,4 +38,8 @@ body {
     src: url('custom-fonts/Carena-Regular.otf') format('opentype');
     font-family: 'abz';
     src: url('custom-fonts/ABeeZee-Regular.ttf') format('truetype');
+    font-family: 'georgia-bold';
+    src: url('custom-fonts/Georgia\ Bold.ttf') format('truetype');
+    font-family: 'georgia';
+    src: url('custom-fonts/Georgia.ttf') format('truetype');
 }
