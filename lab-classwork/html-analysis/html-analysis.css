@@ -1,7 +1,6 @@
 body {
     background-color: rgb(242, 187, 98);
-    font-family: "analogist", sans-serif;
-    letter-spacing: 1px;
+    font-family: 'space grotesk', sans-serif;
     color: #25262A;
     padding: 25px;
 }
@@ -24,7 +23,7 @@ a {
 }
 
 h2 {
-    font-family: "lumina", sans-serif;
+    font-family: 'space grotesk', sans-serif;
 }
 
 p {
