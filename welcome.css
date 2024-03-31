@@ -5,7 +5,6 @@ body {
     padding: 5px;
     font-family: 'space grotesk', sans-serif;
     margin: 0;
-
 }
 
 .grid-container {
@@ -42,8 +41,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 15vh;
-    margin-left: -15px;
-    background-color: pink
+    background-color: pink;
+    width: 100vw;
+    margin-left: -5px;
 }
 
 .button-link1 {
@@ -107,15 +107,15 @@ body {
 }
 
 .button-link1:hover {
-    background: #d4a3e8;
+    background: lightblue;
 }
 
 .button-link2:hover {
-    background: #7ca9f2;
+    background: #D6CB6E;
 }
 
 .button-link3:hover {
-    background: #ebc27a;
+    background: #f2bb62;
 }
 
 .button-link4:hover {

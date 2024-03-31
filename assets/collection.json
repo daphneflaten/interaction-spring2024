@@ -1,0 +1,42 @@
+[
+  {
+	"id": "alabama",
+	"state": "Alabama",
+	"description": "Information about Alabama goes here...",
+	"image": "/license-plates/alabama.png",
+	"tagline": "Heart of Dixie",
+	"colorscheme": "Yellow with Black",
+	"specialtyplates": "# of them here",
+	"previousplates": "# of them here"
+  },
+  {
+    "id": "alaska",
+    "state": "Alaska",
+    "description": "Information about Alaska goes here...",
+    "image": "/license-plates/alaska.png",
+    "tagline": "The Last Frontier",
+	"colorscheme": "White with Blue",
+	"specialtyplates": "# of them here",
+	"previousplates": "# of them here"
+  },
+  {
+    "id": "arizona",
+    "state": "Arizona",
+    "description": "Information about Arizona goes here...",
+    "image": "/license-plates/arizona.png",
+    "tagline": "Grand Canyon State",
+	"colorscheme": "Blue, Yellow, Purple and Black",
+	"specialtyplates": "# of them here",
+	"previousplates": "# of them here"
+  },
+  {
+    "id": "arkansas",
+    "state": "Arkansas",
+    "description": "Information about Arkansas goes here...",
+    "image": "/license-plates/arkansas.png",
+    "tagline": "The Natural State",
+	"colorscheme": "Blue with Red",
+	"specialtyplates": "# of them here",
+	"previousplates": "# of them here"
+  }
+]

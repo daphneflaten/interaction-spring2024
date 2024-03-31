@@ -1,0 +1,63 @@
+body {
+  font-family: 'reddit mono', sans-serif;
+  color: #3f2e00;
+  background-color: #d2e1ef;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+ul img:hover {
+  transform: rotateY(360deg);
+}
+
+.navbar {
+  overflow: hidden;
+  z-index: 500;
+  background-color: #3f2e00;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  display: block;
+  color: #d2e1ef;
+  text-align: center;
+  padding: 14px 0;
+  flex: 1;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #d2e1ef;
+  color: #3f2e00;
+}
+
+#second {
+  display: none;
+}
+
+.is-hidden {
+  display: none;
+}

@@ -1,12 +1,3 @@
-body {
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-}
-
 @font-face {
     font-family: 'advera';
     src: url('custom-fonts/Advera.ttf') format('truetype');
