@@ -110,7 +110,7 @@ const renderItems = (collection) => {
 
 // This is where we tie everything together
 // Fetch gets your JSON file…
-fetch('/assets/collection.json')
+fetch('assets/collection.json')
     .then(response => response.json())
     .then(collection => {
         // And passes the data to the function, above!
