@@ -3,11 +3,28 @@ body {
   color: #3f2e00;
   background-color: #d2e1ef;
   margin: 0;
+  margin-bottom: 60px;
+}
+
+.container1 {
+  text-align: center;
+  top: 0;
+  background-color: #d2e1ef; /* Just for visibility */
+  z-index: 10;
+  color: #3f2e00;
+  align-items: center;
+}
+.container1 img {
+  width: 40%;
+  height: auto;
 }
 
 h1 {
-  text-align: center;
-  font-size: 64px;
+  font-size: 40px;
+}
+
+h2 {
+  align-items: top;
 }
 
 ul {
@@ -16,48 +33,166 @@ ul {
   gap: 10px;
   padding: 10px;
   box-sizing: border-box;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul img {
   width: 100%;
   height: auto;
   cursor: pointer;
-  transition: transform 1s;
+  border-radius: 10px; /* Adjust the value as needed for the desired roundness */
+  overflow: hidden; /* Ensure that the image is clipped to the rounded shape */
 }
 
-ul img:hover {
-  transform: rotateY(360deg);
-}
-
-.navbar {
-  overflow: hidden;
-  z-index: 500;
-  background-color: #3f2e00;
-  position: sticky;
-  top: 0;
-  width: 100%;
+li {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--spacing);
 }
 
-.navbar a {
-  display: block;
-  color: #d2e1ef;
+summary {
+  cursor: pointer;
+}
+
+.list-item {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.list-item-content {
+  left: 48.5%;
+  transform: translateX(-50%);
+  position: fixed;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: .5fr .75fr .75fr .75fr; /* Define three columns with different widths */
+  top: 0;
+  text-align: left;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #3f2e00;
+  color: #3f2e00;
+  width: 90vw;
+  height: 12%;
+  z-index: 11;
+  opacity: 0; /* Hide content by default */
+  pointer-events: none;
+  border-radius: 40px;
+}
+
+
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.list-item.is-active .list-item-content {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.filters {
+  position: fixed;
+  justify-content: center;
+  gap: 5px;
+  background-color: #f8f8f8;
+  bottom: 0;
+  max-width: 35%;
+  z-index: 9999;
+  color: #3f2e00;
   text-align: center;
-  padding: 14px 0;
-  flex: 1;
-  text-decoration: none;
+  line-height: 30px;
+  padding: 10px;
+  left: 50%;
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 12px;
+  border: 1px solid #3f2e00;
+  border-radius: 20px; /* Adjust the value as needed for the desired roundness */
 }
 
-.navbar a:hover {
+.filter-item {
+  font-family: 'reddit mono', sans-serif;
+  border: none;
+  border-radius: 20px;
+  transition: background-color .2s, color .2s;
+  cursor: pointer;
   background-color: #d2e1ef;
   color: #3f2e00;
 }
 
-#second {
-  display: none;
+.filter-item:hover,
+.filter-item.is-active {
+  background-color: #3f2e00;
+  color: #d2e1ef;
 }
 
 .is-hidden {
   display: none;
+}
+
+.image-container {
+  perspective: 1000px;
+}
+
+.original-image,
+.flipped-image {
+  width: 100%;
+  height: auto;
+  transition: transform .5s;
+  cursor: pointer;
+
+}
+
+.original-image {
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+}
+
+.flipped-image {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.image-container:hover .original-image {
+  transform: rotateY(180deg);
+  cursor: pointer;
+
+}
+
+.image-container:hover .flipped-image {
+  transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  font-size: 12px;
 }
