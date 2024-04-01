@@ -55,7 +55,7 @@ const renderItems = (collection) => {
         item.addEventListener('click', () => {
             // actually tell it what to do on click
             // in this case, we'll add/remove an 'is-active', a css class to hide/show its content
-            
+
             // First, remove 'is-active' class from all other items
             listItems.forEach(otherItem => {
                 if (otherItem !== item) {
@@ -84,7 +84,7 @@ const renderItems = (collection) => {
             // const buttonCountry = item.dataset.country;
             const buttonCountry = button.getAttribute("data-country"); // another way to get an attribute
             const buttonState = button.classList.contains('is-active'); // true (active) or false (inactive)
-            
+
             // if we are toggling off a button OR (that's what || means) the All button is clicked…
             // show all elements
             if (buttonState == false || buttonCountry == 'All') {
@@ -92,7 +92,7 @@ const renderItems = (collection) => {
                 hiddenListItems.forEach(item => {
                     item.classList.remove('is-hidden');
                 });
-            // otherwise, start filtering
+                // otherwise, start filtering
             } else {
                 // go through each list item again, deciding if to show or hide it
                 listItems.forEach(item => {

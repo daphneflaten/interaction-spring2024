@@ -9,11 +9,12 @@ body {
 .container1 {
   text-align: center;
   top: 0;
-  background-color: #d2e1ef; /* Just for visibility */
+  background-color: #d2e1ef;
   z-index: 10;
   color: #3f2e00;
   align-items: center;
 }
+
 .container1 img {
   width: 40%;
   height: auto;
@@ -42,8 +43,8 @@ ul img {
   width: 100%;
   height: auto;
   cursor: pointer;
-  border-radius: 10px; /* Adjust the value as needed for the desired roundness */
-  overflow: hidden; /* Ensure that the image is clipped to the rounded shape */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 li {
@@ -69,8 +70,8 @@ summary {
   margin: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  display: grid; /* Use grid layout */
-  grid-template-columns: .5fr .75fr .75fr .75fr; /* Define three columns with different widths */
+  display: grid;
+  grid-template-columns: .5fr .75fr .75fr .75fr;
   top: 0;
   text-align: left;
   justify-content: center;
@@ -80,22 +81,9 @@ summary {
   width: 90vw;
   height: 12%;
   z-index: 11;
-  opacity: 0; /* Hide content by default */
+  opacity: 0;
   pointer-events: none;
   border-radius: 40px;
-}
-
-
-
-.close-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 24px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
 }
 
 .list-item.is-active .list-item-content {
@@ -107,9 +95,6 @@ summary {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 .filters {
   position: fixed;
@@ -128,7 +113,7 @@ summary {
   transform: translateX(-50%);
   font-size: 12px;
   border: 1px solid #3f2e00;
-  border-radius: 20px; /* Adjust the value as needed for the desired roundness */
+  border-radius: 20px;
 }
 
 .filter-item {
