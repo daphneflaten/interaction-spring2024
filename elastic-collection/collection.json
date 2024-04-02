@@ -6,10 +6,18 @@
     "image": "license-plates/alabama.png",
     "flippedimage": "old-plates/alabama.png",
     "tagline": "Heart of Dixie",
-    "colorscheme": "Yellow with Black",
+    "year": "(1955-1976)",
+    "tagline2": "Stars Fell On",
+    "year2": "(2002)",
+    "tagline3": "God Bless America",
+    "year3": "(2007)",
+    "tagline4": "Sweet Home",
+    "year4": "(2009)",
+    "colorscheme": "insert",
     "specialtyplates": "# of them here",
     "previousplates": "# of them here",
-    "color": "Red"
+    "color": "Red",
+    "frontrequirement": "No"
   },
   {
     "id": "alaska",
@@ -17,8 +25,21 @@
     "description": "Information about Alaska goes here...",
     "image": "license-plates/alaska.png",
     "flippedimage": "old-plates/alaska.png",
-    "tagline": "The Last Frontier",
-    "colorscheme": "White with Blue",
+    "tagline": [
+      {
+        "slogan": "'North to the Future'",
+        "year": "(1966-1967, 1970-1975)"
+      },
+      {
+        "slogan": "'The Great Land'",
+        "year": "(1968-1969)"
+      },
+      {
+        "slogan": "'The Last Frontier'",
+        "year": "(1981-2017)"
+      }
+    ],
+    "colorscheme": "insert",
     "specialtyplates": "# of them here",
     "previousplates": "# of them here"
   },
@@ -28,8 +49,8 @@
     "description": "Information about Arizona goes here...",
     "image": "license-plates/arizona.png",
     "flippedimage": "old-plates/arizona.png",
-    "tagline": "Grand Canyon State",
-    "colorscheme": "Blue, Yellow, Purple and Black",
+    "tagline": "'Grand Canyon State' (1940-present)",
+    "colorscheme": "insert",
     "specialtyplates": "# of them here",
     "previousplates": "# of them here"
   },
@@ -39,8 +60,8 @@
     "description": "Information about Arkansas goes here...",
     "image": "license-plates/arkansas.png",
     "flippedimage": "old-plates/arkansas.png",
-    "tagline": "The Natural State",
-    "colorscheme": "Blue with Red",
+    "tagline": "'Opportunity Land' (1941, 1948-1949), 'Land of Opportunity' (1950-1978), 'The Natural State' (1989-present)",
+    "colorscheme": "insert",
     "specialtyplates": "# of them here",
     "previousplates": "# of them here"
   },
@@ -50,8 +71,8 @@
     "description": "Information about California goes here...",
     "image": "license-plates/california.png",
     "flippedimage": "old-plates/california.png",
-    "tagline": "The Natural State",
-    "colorscheme": "Blue with Red",
+    "tagline": "'The Golden State' (1998)",
+    "colorscheme": "insert",
     "specialtyplates": "# of them here",
     "previousplates": "# of them here"
   },
@@ -61,9 +82,9 @@
     "description": "Information about Colorado goes here...",
     "image": "license-plates/colorado.png",
     "flippedimage": "old-plates/colorado.png",
-    "tagline": "insert",
+    "tagline": "'Colorful' (1954-1974)",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "313",
     "previousplates": "insert"
   },
   {
@@ -72,7 +93,7 @@
     "description": "Information about Conneticut goes here...",
     "image": "license-plates/conneticuit.png",
     "flippedimage": "old-plates/conneticut.png",
-    "tagline": "insert",
+    "tagline": "'Constitution State' (1974-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -83,7 +104,7 @@
     "description": "Information about Delaware goes here...",
     "image": "license-plates/delaware.png",
     "flippedimage": "old-plates/delaware.png",
-    "tagline": "insert",
+    "tagline": "'The First State' (1962-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -94,7 +115,7 @@
     "description": "Information about Florida goes here...",
     "image": "license-plates/florida.png",
     "flippedimage": "old-plates/florida.png",
-    "tagline": "insert",
+    "tagline": "'Sunshine State' (1949-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -105,18 +126,18 @@
     "description": "Information about Georgia goes here...",
     "image": "license-plates/georgia.png",
     "flippedimage": "old-plates/georgia.png",
-    "tagline": "insert",
+    "tagline": "'Peach State' (1940-1970, 2012-present)",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "315",
     "previousplates": "insert"
   },
   {
     "id": "hawaii",
     "state": "Hawai'i",
-    "description": "Information about Hawai'i goes here...",
+    "description": "Hawaii offers the fewest number of plates, with just 14 designs to pick from (plus decals with messages drivers can attach). But a small number of plates offered doesn't mean lower quality plates. In 2022, the Automobile License Plate Collector's Association chose Hawaii's beautiful 'Polynesian Voyaging' as the 'Best New Plate'. The “Hawai'i Volcanoes National Park is also quite beautiful.",
     "image": "license-plates/hawaii.png",
     "flippedimage": "old-plates/hawaii.png",
-    "tagline": "insert",
+    "tagline": "'Aloha State' (1961-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -127,7 +148,7 @@
     "description": "Information about Idaho goes here...",
     "image": "license-plates/idaho.png",
     "flippedimage": "old-plates/idaho.png",
-    "tagline": "insert",
+    "tagline": "'50 Years of Statehood' (1940), 'World Famous Potatoes' (1948-1956), 'Famous Potatoes' (1957-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -138,7 +159,7 @@
     "description": "Information about Illinois goes here...",
     "image": "license-plates/illinois.png",
     "flippedimage": "old-plates/illinois.png",
-    "tagline": "insert",
+    "tagline": "'Land of Lincoln' (1954-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -149,7 +170,7 @@
     "description": "Information about Indiana goes here...",
     "image": "license-plates/indiana.png",
     "flippedimage": "old-plates/indiana.png",
-    "tagline": "insert",
+    "tagline": "'Hoosier State' (1976), 'The Crossroads of America' (1976), 'In God We Trust' (2008)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -160,7 +181,7 @@
     "description": "Information about Iowa goes here...",
     "image": "license-plates/iowa.png",
     "flippedimage": "old-plates/iowa.png",
-    "tagline": "insert",
+    "tagline": "'The Corn State' (1953-1955)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -171,7 +192,7 @@
     "description": "Information about Kansas goes here...",
     "image": "license-plates/kansas.png",
     "flippedimage": "old-plates/kansas.png",
-    "tagline": "insert",
+    "tagline": "'The Wheat State' (1949-1959)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -182,7 +203,7 @@
     "description": "Information about Kentucky goes here...",
     "image": "license-plates/kentucky.png",
     "flippedimage": "old-plates/kentucky.png",
-    "tagline": "insert",
+    "tagline": "'Bluegrass State' (1988-present)",
     "colorscheme": "insert",
     "specialtyplates": "insert",
     "previousplates": "insert"
@@ -212,12 +233,12 @@
   {
     "id": "maryland",
     "state": "Maryland",
-    "description": "Information about Maryland goes here...",
+    "description": "Maryland ranks 19th in the United States with an estimated 2022 population of 6.1 million residents. But Maryland leads the pack when it comes to the number of license plates it offers drivers. I counted 989 distinct plates listed on the Maryland Department of Motor Vehicles' website.",
     "image": "license-plates/maryland.png",
     "flippedimage": "old-plates/maryland.png",
     "tagline": "insert",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "989",
     "previousplates": "insert"
   },
   {
@@ -393,7 +414,7 @@
     "flippedimage": "old-plates/oklahoma.png",
     "tagline": "insert",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "298",
     "previousplates": "insert"
   },
   {
@@ -415,7 +436,7 @@
     "flippedimage": "old-plates/pennsylvania.png",
     "tagline": "insert",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "425",
     "previousplates": "insert"
   },
   {
@@ -456,7 +477,7 @@
     "state": "Tennessee",
     "description": "Information about Tennessee goes here...",
     "image": "license-plates/tennessee.png",
-    "flippedimage": "old-plates/tennesee.png",
+    "flippedimage": "old-plates/tennessee.png",
     "tagline": "insert",
     "colorscheme": "insert",
     "specialtyplates": "insert",
@@ -470,7 +491,7 @@
     "flippedimage": "old-plates/texas.png",
     "tagline": "insert",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "476",
     "previousplates": "insert"
   },
   {
@@ -503,7 +524,7 @@
     "flippedimage": "old-plates/virginia.png",
     "tagline": "insert",
     "colorscheme": "insert",
-    "specialtyplates": "insert",
+    "specialtyplates": "335",
     "previousplates": "insert"
   },
   {

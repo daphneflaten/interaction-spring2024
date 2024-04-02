@@ -14,29 +14,46 @@ const renderItems = (collection) => {
         // Use “template string/literal" to create a bundnle of HTML all at once
         // notice the tick marks `` wrapped around everything, with ${variable} used for dynamic content
         const itemDetails =
-            `<li id="${item.id}" class="list-item" data-title="${item.title}">
-                <div class="image-container">
-                    <!-- Original image -->
-                    <img src="${item.image ? item.image : ''}" class="original-image">
-                    <!-- Flipped image -->
-                    <img src="${item.flippedimage ? item.flippedimage : ''}" class="flipped-image">
+        `<li id="${item.id}" class="list-item" data-title="${item.title}">
+            <div class="image-container">
+                <!-- Original image -->
+                <img src="${item.image ? item.image : ''}" class="original-image">
+                <!-- Flipped image -->
+                <img src="${item.flippedimage ? item.flippedimage : ''}" class="flipped-image">
+            </div>
+            <div class="list-item-content">
+                <div class="1">
+                    <h2>${item.state}</h2>
                 </div>
-                <div class="list-item-content">
-                    <div class="1">
-                        <h2>${item.state}</h2>
-                    </div>
-                    <div class="2">
-                        <p>Color Scheme: ${item.colorscheme}</p>
-                    </div>
-                    <div class="3">
-                        <p>Current/Past Tagline: ${item.tagline}</p>
-                    </div>
-                    <div class="4">
-                        <p>${item.description}</p>
-                    </div>
+                <div class="2">
+                    <h3>Number of Plates:</h3>
+                    <p>${item.specialtyplates ? item.specialtyplates : 'N/A'}</p>
                 </div>
-
-            </li>`;
+                <div class="3">
+                    <h3>Tagline History:</h3>
+                    ${item.tagline ? `
+                        <p>"${item.tagline}"<br><div id="year">${item.year}</div></p>
+                    ` : ''}
+                    ${item.tagline2 ? `
+                        <p>"${item.tagline2}"<br><div id="year">${item.year2}</div></p>
+                    ` : ''}
+                    ${item.tagline3 ? `
+                        <p>"${item.tagline3}"<br><div id="year">${item.year3}</div></p>
+                    ` : ''}
+                    ${item.tagline4 ? `
+                        <p>"${item.tagline4}"<br><div id="year">${item.year4}</div></p>
+                    ` : ''}
+                </div>
+                <div class="4">
+                    <h3>Requires Front Plate?</h3>
+                    <p>${item.frontrequirement}</p>
+                </div>
+                <div class="5">
+                    <h3>Year of First Plate:</h3>
+                    <p>${item.previousplates}</p>
+                </div>
+            </div>
+        </li>`;
 
         // Step 4: Insert our new HTML (stored in itemDetails) into the page (before the end the collectionList element )
         collectionList.insertAdjacentHTML('beforeend', itemDetails);
@@ -116,3 +133,14 @@ fetch('collection.json')
         // And passes the data to the function, above!
         renderItems(collection)
     })
+
+//scrollable image
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    document.getElementById("scroll").style.width = "20%";
+  } else {
+    document.getElementById("scroll").style.width = "60%";
+  }
+}
