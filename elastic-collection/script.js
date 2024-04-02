@@ -14,14 +14,18 @@ const renderItems = (collection) => {
         // Use “template string/literal" to create a bundnle of HTML all at once
         // notice the tick marks `` wrapped around everything, with ${variable} used for dynamic content
         const itemDetails =
-        `<li id="${item.id}" class="list-item" data-title="${item.title}">
+        `<div>
+        <li id="${item.id}" class="list-item" data-title="${item.title}">
             <div class="image-container">
                 <!-- Original image -->
                 <img src="${item.image ? item.image : ''}" class="original-image">
                 <!-- Flipped image -->
                 <img src="${item.flippedimage ? item.flippedimage : ''}" class="flipped-image">
             </div>
-            <div class="list-item-content">
+        </li>
+        <div class="container3">
+        <div class="list-item-content">
+            <div class="close">x</div>
                 <div class="1">
                     <h2>${item.state}</h2>
                 </div>
@@ -53,7 +57,8 @@ const renderItems = (collection) => {
                     <p>${item.previousplates}</p>
                 </div>
             </div>
-        </li>`;
+            </div>
+            </div>`;
 
         // Step 4: Insert our new HTML (stored in itemDetails) into the page (before the end the collectionList element )
         collectionList.insertAdjacentHTML('beforeend', itemDetails);
@@ -72,6 +77,11 @@ const renderItems = (collection) => {
         item.addEventListener('click', () => {
             // actually tell it what to do on click
             // in this case, we'll add/remove an 'is-active', a css class to hide/show its content
+
+            console.log("click");
+            const container3 = item.parentElement.getElementsByClassName("container3")[0];
+            console.log(container3);
+            container3.classList.toggle('is-active');
 
             // First, remove 'is-active' class from all other items
             listItems.forEach(otherItem => {

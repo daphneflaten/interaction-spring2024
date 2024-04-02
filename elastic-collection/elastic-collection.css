@@ -95,12 +95,28 @@ summary {
   height: 90%;
   z-index: 11;
   opacity: 0;
-  pointer-events: none;
   border-radius: 10px;
   margin-top: 15px;
 }
 
-.list-item.is-active .list-item-content {
+.container3 {
+  left: 1%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  text-align: left;
+  background-color: #f8f8f8;
+  border: 1px solid #3f2e00;
+  color: #3f2e00;
+  width: 12vw;
+  height: 90%;
+  z-index: 11;
+  opacity: 0;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.list-item.is-active .list-item-content container3.is-active {
   opacity: 1;
 }
 
