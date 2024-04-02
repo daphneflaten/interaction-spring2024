@@ -14,24 +14,21 @@ const renderItems = (collection) => {
         // Use “template string/literal" to create a bundnle of HTML all at once
         // notice the tick marks `` wrapped around everything, with ${variable} used for dynamic content
         const itemDetails =
-        `<div>
-        <li id="${item.id}" class="list-item" data-title="${item.title}">
+        `<li id="${item.id}" class="list-item" data-title="${item.title}">
             <div class="image-container">
                 <!-- Original image -->
                 <img src="${item.image ? item.image : ''}" class="original-image">
                 <!-- Flipped image -->
                 <img src="${item.flippedimage ? item.flippedimage : ''}" class="flipped-image">
             </div>
-        </li>
-        <div class="container3">
-        <div class="list-item-content">
+            <div class="list-item-content">
             <div class="close">x</div>
                 <div class="1">
                     <h2>${item.state}</h2>
                 </div>
                 <div class="2">
                     <h3>Number of Plates:</h3>
-                    <p>${item.specialtyplates ? item.specialtyplates : 'N/A'}</p>
+                    <p>${item.platetotal ? item.platetotal : 'N/A'}</p>
                 </div>
                 <div class="3">
                     <h3>Tagline History:</h3>
@@ -54,11 +51,10 @@ const renderItems = (collection) => {
                 </div>
                 <div class="5">
                     <h3>Year of First Plate:</h3>
-                    <p>${item.previousplates}</p>
+                    <p>${item.firstplate}</p>
                 </div>
             </div>
-            </div>
-            </div>`;
+        </li>`;
 
         // Step 4: Insert our new HTML (stored in itemDetails) into the page (before the end the collectionList element )
         collectionList.insertAdjacentHTML('beforeend', itemDetails);
@@ -77,11 +73,6 @@ const renderItems = (collection) => {
         item.addEventListener('click', () => {
             // actually tell it what to do on click
             // in this case, we'll add/remove an 'is-active', a css class to hide/show its content
-
-            console.log("click");
-            const container3 = item.parentElement.getElementsByClassName("container3")[0];
-            console.log(container3);
-            container3.classList.toggle('is-active');
 
             // First, remove 'is-active' class from all other items
             listItems.forEach(otherItem => {
@@ -149,8 +140,18 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-    document.getElementById("scroll").style.width = "20%";
+    document.getElementById("scroll").style.width = "15%";
   } else {
-    document.getElementById("scroll").style.width = "60%";
+    document.getElementById("scroll").style.width = "50%";
   }
 }
+
+//fixed chunk
+window.addEventListener('scroll', function() {
+    const fixedChunk = document.getElementById("fixed-chunk");
+    if (window.scrollY === 0) {
+        fixedChunk.style.height = "50%"; // Increase the height when scrolled to the top
+    } else {
+        fixedChunk.style.height = "10%"; // Decrease the height when scrolled down
+    }
+});
