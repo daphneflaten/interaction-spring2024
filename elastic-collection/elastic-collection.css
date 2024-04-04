@@ -1,9 +1,8 @@
 html {
   background-size: 100% 100%;
   background-position: fixed;
-  filter: saturate(150%);
-  background-image: url(blue.png);
   background-position: fixed;
+  background-color: #f8f8f8;
 }
 
 body {
@@ -11,6 +10,8 @@ body {
   color: #3f2e00;
   margin: 0;
   max-width: 100vw;
+  padding-top: 15%;
+  padding-bottom: 5%;
 }
 
 
@@ -26,21 +27,23 @@ h3 {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  transition: 1s;
+  transition: 0.5s;
   pointer-events: none;
   z-index: 1000;
   opacity: 1;
 }
 
 .container1 {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  top: 120%;
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right top;
+  white-space: nowrap;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 64px;
 }
 
 h2 {
@@ -56,6 +59,7 @@ ul {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -20%;
 }
 
 ul img {
@@ -64,7 +68,6 @@ ul img {
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 li {
@@ -90,16 +93,15 @@ summary {
   top: 0;
   text-align: left;
   background-color: #f8f8f8;
-  border: 1px solid #3f2e00;
   color: #3f2e00;
   width: 13vw;
-  height: 90%;
-  z-index: 300;
+  height: 100%;
+  z-index: 90;
   opacity: 0;
   pointer-events: none;
-  border-top-right-radius: 10px; /* Apply border radius to the top right corner */
-  border-bottom-right-radius: 10px; /* Apply border radius to the bottom right corner */
-  margin-top: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 50px;
   border-left: none;
 }
 
@@ -202,7 +204,7 @@ p {
 }
 
 .close {
-  color: #aaa;
+  color: #d8d7d7;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -211,7 +213,7 @@ p {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #b7b7b7;
   text-decoration: none;
 }
 
@@ -239,44 +241,125 @@ p {
 
 #fixed-chunk {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   z-index: 1000;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
-  background-color: #daf270;
-  opacity: 75%;
+  height: 100vh;
+  opacity: 100%;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   pointer-events: none;
   z-index: 100;
+  left: 0;
 }
 
 img {
   opacity: 1;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #b3c050;
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  float: left;
+}
+
+.navbar-center {
+  text-align: center;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar a {
+  display: block;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
 #bookmark-tab {
+  position: fixed;
+  width: auto;
+  height: 20px;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  color: #3f2e00;
+  transition: right 0.3s, width 0.3s, height 0.3s;
+}
+
+#bookmark-tab:hover {
+  right: 0;
+  width: 13vw;
+  height: auto;
+}
+
+#bookmark-icon {
+  width: 100%;
+  height: 100%;
+  rotate: 335deg;
+}
+
+#bookmark-content {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background-color: #f8f8f8;
+  display: none;
   padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: width 0.3s ease;
-  border: 1px solid #3f2e00;
-  border-right: none;
+  background-color: #f8f8f8;
+  z-index: 999;
 }
 
-#bookmark-tab:hover {
-  width: 14.5%;
-  height: 20%;
+#bookmark-tab:hover #bookmark-content {
+  display: block;
+}
+
+#bookmark-content h2 {
+  margin-top: 0;
+}
+
+#bookmark-content ul {
+  padding: 0;
+  list-style: none;
+}
+
+#bookmark-content ul li {
+  margin-bottom: 5px;
+}
+
+#bookmark-content img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: -10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
 }

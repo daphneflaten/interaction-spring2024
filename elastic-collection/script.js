@@ -22,7 +22,7 @@ const renderItems = (collection) => {
                 <img src="${item.flippedimage ? item.flippedimage : ''}" class="flipped-image">
             </div>
             <div class="list-item-content">
-            <div class="close">x</div>
+            <div class="close">⨯</div>
                 <div class="1">
                     <h2>${item.state}</h2>
                 </div>
@@ -142,16 +142,6 @@ function scrollFunction() {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     document.getElementById("scroll").style.width = "15%";
   } else {
-    document.getElementById("scroll").style.width = "50%";
+    document.getElementById("scroll").style.width = "70%";
   }
 }
-
-//fixed chunk
-window.addEventListener('scroll', function() {
-    const fixedChunk = document.getElementById("fixed-chunk");
-    if (window.scrollY === 0) {
-        fixedChunk.style.height = "50%"; // Increase the height when scrolled to the top
-    } else {
-        fixedChunk.style.height = "10%"; // Decrease the height when scrolled down
-    }
-});
