@@ -303,7 +303,7 @@ img {
   transform: translateY(-50%);
   padding: 10px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 999;
   color: #3f2e00;
   transition: right 0.3s, width 0.3s, height 0.3s;
 }
@@ -312,6 +312,7 @@ img {
   right: 0;
   width: 13vw;
   height: auto;
+  z-index: 1000;
 }
 
 #bookmark-icon {
@@ -362,4 +363,8 @@ img {
 .grid-item img {
   width: 100%;
   height: auto;
+}
+
+#smaller {
+  font-size: 10px;
 }
