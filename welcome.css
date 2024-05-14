@@ -106,6 +106,22 @@ body {
     color: #383734;
 }
 
+.button-link5 {
+    text-decoration: none;
+    padding: 5px;
+    background: rgb(235, 229, 226);
+    text-align: center;
+    margin: 5px;
+    border-radius: 20px;
+    height: 50px;
+    width: 170px;
+    line-height: 50px;
+    transition: background-color 0.3s;
+    border: 1px solid #383734;
+    color: #383734;
+
+}
+
 .button-link1:hover {
     background: lightblue;
 }
@@ -122,9 +138,14 @@ body {
     background: #a6bd7a;
 }
 
+.button-link5:hover {
+    background: #FB8756;
+}
+
 .button-link1:hover,
 .button-link2:hover,
 .button-link3:hover,
-.button-link4:hover {
+.button-link4:hover,
+.button-link5:hover {
     color: #FAF8F4;
 }

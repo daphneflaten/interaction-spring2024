@@ -265,26 +265,3 @@ p {
     transform: rotate(340deg); /* Apply any transformations */
 }
 
-
-.topbar {
-    position:relative;
-    top: 0;
-    margin-top: -700px;
-    padding: 5px;
-    width: 100%;
-    z-index: 100;
-  }
-  
-  .topbar-left,
-  .topbar-center,
-  .topbar-right {
-    float: left;
-  }
-  
-  .topbar-center {
-    text-align: center;
-  }
-  
-  .topbar-right {
-    float: right;
-  }
