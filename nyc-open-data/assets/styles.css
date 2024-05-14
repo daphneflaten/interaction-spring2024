@@ -8,6 +8,20 @@ body {
     letter-spacing: -1px;
 }
 
+.top-bar {
+
+}
+
+.fact {
+    width: 46ch;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #FB8756;
+    color: #FB8756;
+    padding: 15px;
+    text-align: center;
+}
+
 h1 {
 	margin-bottom: var(--spacing);
 	font-size: 80px;
@@ -51,6 +65,10 @@ h1 {
     justify-content: center;
 	margin: 5%;
 
+}
+
+.slide1 h1 {
+    margin-left: -10vw
 }
 
 .slide3 {
@@ -243,6 +261,30 @@ p {
     width: 200px; /* Set container width */
     height: 200px; /* Set container height */
     margin-top: -25vh;
-    margin-left: 70vw;
+    margin-left: 52vw;
     transform: rotate(340deg); /* Apply any transformations */
 }
+
+
+.topbar {
+    position:relative;
+    top: 0;
+    margin-top: -700px;
+    padding: 5px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .topbar-left,
+  .topbar-center,
+  .topbar-right {
+    float: left;
+  }
+  
+  .topbar-center {
+    text-align: center;
+  }
+  
+  .topbar-right {
+    float: right;
+  }
