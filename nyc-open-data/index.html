@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/reset.css">
+		<link rel="stylesheet" href="assets/styles.css">
+		<script defer src="assets/script.js"></script>
+		<link rel="icon" href="favicon.png" type="image/png">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <title>NYC Open Data</title>
+</head>
+
+<body>
+
+	<div class="container">
+        <section id="table-of-contents">
+            <div class="slides slide1">
+                <div class="paw-stamp">
+                    <img src="paw-stamp.png">
+                </div>
+                <div class="grid-container" style="margin-left: -10vw">
+                    <h1>Official NYC Dog Licensing Open Data Set</h1>
+					<div class="top-bar">
+                        <a href="#breeds">
+                            <div class="left-text">Breeds</div>
+                        </a>
+                        <a href="#names">
+                            <div class="center-text">Names</div>
+                        </a>
+                        <a href="#zipcodes">
+                            <div class="right-text">Zip Codes</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="names">
+            <div class="slides slide2">
+                <h1>Which names are the most common?</h1>
+                    <ul id="collection"></ul>
+
+
+            </div>
+        </section>
+
+        <section id="breeds">
+            <div class="slides slide3">
+				<h1>What breed is the most popular?</h1>
+                <div id="new"></div>
+
+            </div>
+        </section>
+
+		<section id="zipcodes">
+            <div class="slides slide4">
+				<h1>Which borough is most dog-populated?</h1>
+                <div id="other"></div>
+            </div>
+        </section>
+	</div>
+
+
+    
+
+</body>
+
+</html>

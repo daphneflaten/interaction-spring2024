@@ -1,0 +1,248 @@
+body {
+	background-color: #ECF0FA;
+	color: #FB8756;
+	font-family: 'space grotesk', sans-serif;
+    margin: 0;
+    max-width: 100vw;
+    word-wrap: break-word;
+    letter-spacing: -1px;
+}
+
+h1 {
+	margin-bottom: var(--spacing);
+	font-size: 80px;
+    letter-spacing: -3px;
+    line-height: 85px;
+}
+
+.hour {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+.slides {
+    max-width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    word-wrap: break-word;
+    overflow: hidden;
+
+}
+
+.slides h1 {
+    text-align: center;
+    font-size: 75px;
+	padding-bottom: 50px;
+}
+
+.slide1 {
+	display: flex;
+    background-color: #ECF0FA;
+    color: rgb(251, 135, 86);
+	align-items: center;
+    justify-content: center;
+	margin: 5%;
+
+}
+
+.slide3 {
+    background-color: #ECF0FA;
+    color: #FB8756;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden; /* Hide overflow */
+
+}
+
+.slide2 {
+    background-color: #FB8756;
+    color: #ECF0FA;
+}
+
+.slide4 {
+    background-color: #FB8756;
+    color: hsl(223, 58%, 95%);
+    overflow: hidden; /* Hide overflow */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #FB8756;
+    color: #FB8756;
+    padding: 5px;
+    text-align: center;
+    width: fit-content;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.top-bar a {
+    margin: 5px 5px;
+}
+
+.center-text,
+.left-text,
+.right-text {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid #FB8756;
+}
+
+.center-text:hover,
+.right-text:hover,
+.left-text:hover {
+    background-color: #FB8756;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+	text-decoration: none;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: #ECF0FA;
+    padding: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+a {
+	color: #FB8756;
+	text-decoration: none;
+}
+
+#dogNamesChart {
+    display: block;
+    margin: 20px auto; /* Center the canvas */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+}
+
+/* Style for name labels */
+.name-label {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Style for y-axis label */
+.y-axis-label {
+    font-size: 14px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform-origin: left top;
+    white-space: nowrap;
+}
+
+.name {
+	height: 30px;
+	margin-bottom: 5px;
+    text-transform: lowercase;
+    padding: 6px;
+}
+
+.name::first-letter {
+    text-transform: uppercase;
+}
+
+.graph {
+	background-color: #ECF0FA;
+    border-radius: 0px;
+	width: 100%;
+	height: 20px;
+    margin-top: -40px;
+    margin-left: 70px;
+}
+
+.breed{
+	height: 30px;
+	margin-bottom: 5px;
+    padding: 6px;
+}
+
+.graph2 {
+	background-color: #ECF0FA;
+    border-radius: 0px;
+	width: 100%;
+	height: 20px;
+    margin-top: -40px;
+    margin-left: 200px;
+}
+
+
+#new {
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    padding: 5%
+}
+
+.image {
+    flex: 1 0 20%; /* Set flex-grow to 1, flex-shrink to 0, and flex-basis to 20% */
+    max-height: 100%; /* Ensure images don't exceed container width */
+    width: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+.slide3 h2 {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+
+.paw-stamp {
+    position: relative; /* Set the container's position to relative */
+    width: 200px; /* Set container width */
+    height: 200px; /* Set container height */
+}
+
+.paw-stamp img {
+    position: absolute; /* Set the image's position to absolute */
+    width: 200px; /* Set container width */
+    height: 200px; /* Set container height */
+    margin-top: -25vh;
+    margin-left: 70vw;
+    transform: rotate(340deg); /* Apply any transformations */
+}
